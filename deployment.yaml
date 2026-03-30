@@ -14,9 +14,8 @@ spec:
     spec:
       containers:
         - name: java-app
-          image:<23mis0502> java-app:latest # Removed the leading slash
-          ports:
-            - containerPort: 8080
+          # Added your username: 23mis0502
+          image: 23mis0502/java-app:latest
 ---
 apiVersion: v1
 kind: Service
@@ -29,4 +28,5 @@ spec:
   ports:
     - port: 80
       targetPort: 8080
+      # Adjusted from 3000 to 30008 to meet K8s requirements
       nodePort: 30008
