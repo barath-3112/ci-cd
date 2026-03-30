@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: java-app
-          image: java-app:latest # Removed the leading slash
+          image:<23mis0502> java-app:latest # Removed the leading slash
           ports:
             - containerPort: 8080
 ---
